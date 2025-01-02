@@ -99,9 +99,11 @@ function DepartMents() {
         </div>
       </div>
       <div className='flex justify-center m-2'>
-      <button className="bg-blue-600 hover:bg-blue-400 text-white mb-2 font-semibold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none flex items-center justify-center">
+     <Link to='/department'>
+     <button className="bg-blue-600 hover:bg-blue-400 text-white mb-2 font-semibold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none flex items-center justify-center">
   See All
 </button>
+     </Link>
 
       </div>
     </div>

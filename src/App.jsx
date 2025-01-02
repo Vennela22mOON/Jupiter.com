@@ -16,6 +16,7 @@ import { Navigate } from 'react-router-dom';
 import AppointmentForm from './pages/OppointmentForm';
 import LoginPage from './pages/LoginPage';
 import ContactUs from './pages/ContactUs';
+import AboutUs from './pages/AboutUs';
 function App() {
   return (
     <BrowserRouter>
@@ -46,6 +47,8 @@ function App() {
           <Route path="/book-appintment" element={<AppointmentForm />} />
           <Route path="/login-page" element={<LoginPage />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/department" element={<DepartMents />} />
+          <Route path="/about-us" element={<AboutUs />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>

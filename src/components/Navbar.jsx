@@ -145,60 +145,84 @@ function Navbar() {
              <li
   className="text-black hover:text-orange-500 relative"
   onMouseEnter={() => setHoveredItem('specialities')}
-  onMouseLeave={() => setHoveredItem('specialities')}
+  onMouseLeave={() => setHoveredItem(null)}
 >
   SPECIALITIES
   {hoveredItem === 'specialities' && (
     <div
-      className="absolute top-8 left-0 bg-white shadow-lg rounded-md p-8 w-60 max-h-80 overflow-y-hidden overflow-x-hidden"
-      onMouseEnter={() => setHoveredItem('specialities')} 
-      onMouseLeave={() => setHoveredItem('specialities')} 
+      className="absolute top-full left-0 bg-white shadow-lg rounded-md p-4 w-60 max-h-80"
+      onMouseEnter={() => setHoveredItem('specialities')}
+      onMouseLeave={() => setHoveredItem(null)}
     >
       <ul className="space-y-2 list-disc">
-        <li className="text-black hover:text-orange-500 cursor-pointer">Bariatic Surgery</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Cardiology</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Dermatology</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Gastroenterology</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Haematology and BMT</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Interventional Radiology</li>
+        <li className="text-black hover:text-orange-500 cursor-pointer">
+          Bariatic Surgery
+        </li>
+        <li className="text-black hover:text-orange-500 cursor-pointer">
+          Cardiology
+        </li>
+        <li className="text-black hover:text-orange-500 cursor-pointer">
+          Dermatology
+        </li>
+        <li className="text-black hover:text-orange-500 cursor-pointer">
+          Gastroenterology
+        </li>
+        <li className="text-black hover:text-orange-500 cursor-pointer">
+          Haematology and BMT
+        </li>
+        <li className="text-black hover:text-orange-500 cursor-pointer">
+          Interventional Radiology
+        </li>
       </ul>
     </div>
   )}
 </li>
 
-              <li
-                className="text-black hover:text-orange-500 relative"
-                onMouseEnter={() => setHoveredItem('appointment')}
-                onMouseLeave={() => setHoveredItem('appointment')}
-              >
-                APPOINTMENT
-                {hoveredItem === 'appointment' && (
-                  <div className="absolute top-8 left-0 bg-white shadow-lg rounded-md w-40 p-2">
-                    <ul className="space-y-2">
-                      <li className="text-blue-600 hover:text-orange-500 cursor-pointer">
-                        <Link to='book-appintment'>Book Appointment</Link>
-                        </li>
-                    
-                    </ul>
-                  </div>
-                )}
-              </li>
-              <li
-                className="text-black hover:text-orange-500 relative"
-                onMouseEnter={() => setHoveredItem('about')}
-                onMouseLeave={() => setHoveredItem()}
-              >
-                ABOUT
-                {hoveredItem === 'about' && (
-                  <div className="absolute top-8 left-0 bg-white shadow-lg rounded-md w-40 p-2">
-                    <ul className="space-y-2">
-                      <li className="text-blue-600 hover:text-orange-500 cursor-pointer">
-                        <Link to='/contact-us'>Contact Us</Link></li>
-                      <li className="text-blue-600 hover:text-orange-500 cursor-pointer">About Us</li>
-                    </ul>
-                  </div>
-                )}
-              </li>
+<li
+  className="text-black hover:text-orange-500 relative"
+  onMouseEnter={() => setHoveredItem('appointment')}
+  onMouseLeave={() => setHoveredItem(null)}
+>
+  APPOINTMENT
+  {hoveredItem === 'appointment' && (
+    <div
+      className="absolute top-full left-0 bg-white shadow-lg rounded-md w-40 p-2"
+      onMouseEnter={() => setHoveredItem('appointment')}
+      onMouseLeave={() => setHoveredItem(null)}
+    >
+      <ul className="space-y-2">
+        <li className="text-blue-600 hover:text-orange-500 cursor-pointer">
+          <Link to="book-appointment">Book Appointment</Link>
+        </li>
+      </ul>
+    </div>
+  )}
+</li>
+
+<li
+  className="text-black hover:text-orange-500 relative"
+  onMouseEnter={() => setHoveredItem('about')}
+  onMouseLeave={() => setHoveredItem(null)}
+>
+  ABOUT
+  {hoveredItem === 'about' && (
+    <div
+      className="absolute top-full left-0 bg-white shadow-lg rounded-md w-40 p-2"
+      onMouseEnter={() => setHoveredItem('about')}
+      onMouseLeave={() => setHoveredItem(null)}
+    >
+      <ul className="space-y-2">
+        <li className="text-blue-600 hover:text-orange-500 cursor-pointer">
+          <Link to="/contact-us">Contact Us</Link>
+        </li>
+        <li className="text-blue-600 hover:text-orange-500 cursor-pointer">
+         <Link to='/about-us'> About Us</Link>
+        </li>
+      </ul>
+    </div>
+  )}
+</li>
+
               <Link to='/finding-doctor'>
               <li>
                 <FaSearch size={20} className="text-blue-500" />
