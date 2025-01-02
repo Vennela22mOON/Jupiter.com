@@ -13,6 +13,9 @@ import FindingDoctors from './pages/FindingDoctors';
 import HealthCheckUp from './pages/HealthCheckUp';
 import SurgerySpecialists from './pages/SurgerySpecialists';
 import { Navigate } from 'react-router-dom';
+import AppointmentForm from './pages/OppointmentForm';
+import LoginPage from './pages/LoginPage';
+import ContactUs from './pages/ContactUs';
 function App() {
   return (
     <BrowserRouter>
@@ -40,6 +43,9 @@ function App() {
           <Route path="/surgery-specialist" element={<SurgerySpecialists />} />
           <Route path="/health" element={<SurgerySpecialists />} />
           <Route path="/health-c" element={<SurgerySpecialists />} />
+          <Route path="/book-appintment" element={<AppointmentForm />} />
+          <Route path="/login-page" element={<LoginPage />} />
+          <Route path="/contact-us" element={<ContactUs />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>

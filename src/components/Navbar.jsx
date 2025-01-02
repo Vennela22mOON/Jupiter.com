@@ -93,10 +93,12 @@ function Navbar() {
 </div>
 
         <div className="relative flex items-center space-x-4">
+          <Link to='/login-page'>
           <button className="bg-blue-500 hover:bg-blue-300 text-white py-2 px-4 rounded-md flex items-center space-x-2">
             <FaUser size={20} />
             <span>LOGIN</span>
           </button>
+          </Link>
 
           <div className="relative">
             <div
@@ -148,7 +150,7 @@ function Navbar() {
   SPECIALITIES
   {hoveredItem === 'specialities' && (
     <div
-      className="absolute top-8 left-0 bg-white shadow-lg rounded-md p-8 w-60 max-h-80 overflow-y-auto overflow-x-hidden"
+      className="absolute top-8 left-0 bg-white shadow-lg rounded-md p-8 w-60 max-h-80 overflow-y-hidden overflow-x-hidden"
       onMouseEnter={() => setHoveredItem('specialities')} 
       onMouseLeave={() => setHoveredItem('specialities')} 
     >
@@ -159,40 +161,6 @@ function Navbar() {
         <li className="text-black hover:text-orange-500 cursor-pointer">Gastroenterology</li>
         <li className="text-black hover:text-orange-500 cursor-pointer">Haematology and BMT</li>
         <li className="text-black hover:text-orange-500 cursor-pointer">Interventional Radiology</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Neurology</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Obs And Gynaecology</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Organ Transplant</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Pain Clinic</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Robotic Knee Replacement</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">TAVI / TAVAR</li>
-      </ul>
-      <ul className="space-y-2 list-disc">
-        <li className="text-black hover:text-orange-500 cursor-pointer">Breast care Center</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Chest Medicine</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">ENT</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">General Surgery And Minimal access Surgery</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Infectio Diseases</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Mental Health</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Neurology</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Oncalogyu</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Orthopaedics</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Plastic And Cosmetic Surgery</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Robotic Surgery</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Urology</li>
-      </ul>
-      <ul className="space-y-2 list-disc">
-        <li className="text-black hover:text-orange-500 cursor-pointer">Caerdiac Surgery</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Dental Care</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Endocrinology and Diabetes</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Internal medicines</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Nephrology</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Nutrition and Dietetics</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Opthalmlology</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Paediatrics</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Organ Transplant</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Rheumatology</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Robotic Knee Replacement</li>
-        <li className="text-black hover:text-orange-500 cursor-pointer">Spine Surgery</li>
       </ul>
     </div>
   )}
@@ -207,9 +175,10 @@ function Navbar() {
                 {hoveredItem === 'appointment' && (
                   <div className="absolute top-8 left-0 bg-white shadow-lg rounded-md w-40 p-2">
                     <ul className="space-y-2">
-                      <li className="text-blue-600 hover:text-orange-500 cursor-pointer">Option 1</li>
-                      <li className="text-blue-600 hover:text-orange-500 cursor-pointer">Option 2</li>
-                      <li className="text-blue-600 hover:text-orange-500 cursor-pointer">Option 3</li>
+                      <li className="text-blue-600 hover:text-orange-500 cursor-pointer">
+                        <Link to='book-appintment'>Book Appointment</Link>
+                        </li>
+                    
                     </ul>
                   </div>
                 )}
@@ -223,9 +192,9 @@ function Navbar() {
                 {hoveredItem === 'about' && (
                   <div className="absolute top-8 left-0 bg-white shadow-lg rounded-md w-40 p-2">
                     <ul className="space-y-2">
-                      <li className="text-blue-600 hover:text-orange-500 cursor-pointer">Option 1</li>
-                      <li className="text-blue-600 hover:text-orange-500 cursor-pointer">Option 2</li>
-                      <li className="text-blue-600 hover:text-orange-500 cursor-pointer">Option 3</li>
+                      <li className="text-blue-600 hover:text-orange-500 cursor-pointer">
+                        <Link to='/contact-us'>Contact Us</Link></li>
+                      <li className="text-blue-600 hover:text-orange-500 cursor-pointer">About Us</li>
                     </ul>
                   </div>
                 )}
