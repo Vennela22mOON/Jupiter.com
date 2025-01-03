@@ -150,7 +150,7 @@ function Navbar() {
   SPECIALITIES
   {hoveredItem === 'specialities' && (
     <div
-      className="absolute top-full left-0 bg-white shadow-lg rounded-md p-4 w-60 max-h-80"
+      className="absolute top-full left-0 bg-white shadow-lg rounded-md p-6 w-60 max-h-80"
       onMouseEnter={() => setHoveredItem('specialities')}
       onMouseLeave={() => setHoveredItem(null)}
     >
@@ -192,7 +192,7 @@ function Navbar() {
     >
       <ul className="space-y-2">
         <li className="text-blue-600 hover:text-orange-500 cursor-pointer">
-          <Link to="book-appointment">Book Appointment</Link>
+          <Link to="/book-appointment">Book Appointment</Link>
         </li>
       </ul>
     </div>

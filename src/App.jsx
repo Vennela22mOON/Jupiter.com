@@ -49,6 +49,7 @@ function App() {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/department" element={<DepartMents />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/book-appointment" element={<AppointmentForm />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
