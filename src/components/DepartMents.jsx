@@ -8,7 +8,7 @@ import teeth from '../surgeryIcons/teeth.png';
 import { Link } from 'react-router-dom';
 function DepartMents() {
   return (
-    <div className="bg-slate-100 mt-3">
+    <div className="bg-slate-100 mt-3 overflow-hidden sm:64">
       <div className="flex justify-center">
         <h1 className="text-gray-900 font-extrabold text-4xl p-4">Specialised departments for your every need</h1>
       </div>

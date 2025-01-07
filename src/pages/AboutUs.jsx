@@ -3,7 +3,7 @@ import image from '../slideImages/slide4.webp';
 import Footer from "../components/Footer";
 const AboutUs = () => {
   return (
-    <div className="px-4 md:px-16 py-8">
+    <div className="px-4 md:px-16 py-8 overflow-hidden">
       <nav className="text-sm text-gray-600 mb-4">
         <ul className="flex space-x-2">
           <li><a href="/" className="hover:text-blue-500">Home</a></li>
